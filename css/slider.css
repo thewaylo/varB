@@ -1,0 +1,513 @@
+/* line 13, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_thumbnail.scss */
+.container-gray-light > .thumbnails {
+  padding-top: 2rem;
+}
+
+@media screen and (min-width: 75em) {
+  /* line 13, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_thumbnail.scss */
+  .container-gray-light > .thumbnails {
+    padding-top: 3rem;
+  }
+}
+
+/* line 20, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_thumbnail.scss */
+.container-gray-light > .thumbnails:only-child {
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 75em) {
+  /* line 20, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_thumbnail.scss */
+  .container-gray-light > .thumbnails:only-child {
+    padding-bottom: 3rem;
+  }
+}
+
+/* line 210, C:/Code/assets/AssetFiles/stylesheets/sass/base/_typography.scss */
+.container-gray-light .heading-stripe {
+  background-color: #f6f6f6;
+}
+
+
+/* line 320, C:/Code/assets/AssetFiles/stylesheets/sass/layout/_grid.scss */
+.container-gray-light {
+  background-color: #f6f6f6;
+}
+
+/* line 138, C:/Code/assets/AssetFiles/stylesheets/sass/vendor/foundation/util/_mixins.scss */
+.container-gray-light::before, .container-gray-light::after {
+  content: ' ';
+  display: table;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -ms-flex-order: 1;
+      order: 1;
+}
+
+/* line 146, C:/Code/assets/AssetFiles/stylesheets/sass/vendor/foundation/util/_mixins.scss */
+.container-gray-light::after {
+  clear: both;
+}
+
+/* line 8, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_callouts.scss */
+.container-gray-light .callout {
+  background-color: #ededed;
+}
+
+
+
+/*----- Slider component */
+
+.slider {
+  position: relative;
+  height: 0.3125rem;
+  margin-top: 1.25rem;
+  margin-bottom: 2.25rem;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -ms-touch-action: none;
+      touch-action: none;
+}
+
+/* line 107, C:/Code/assets/AssetFiles/stylesheets/sass/vendor/foundation/components/_slider.scss */
+.slider-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  max-width: 100%;
+  height: 0.3125rem;
+  background-color: #f05f40;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 43, C:/Code/assets/AssetFiles/stylesheets/sass/vendor/foundation/components/_slider.scss */
+.slider-fill.is-dragging {
+  transition: all 0s linear;
+}
+
+/* line 112, C:/Code/assets/AssetFiles/stylesheets/sass/vendor/foundation/components/_slider.scss */
+.slider-handle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  border-radius: 100%;
+}
+
+/* line 166, C:/Code/assets/AssetFiles/stylesheets/sass/vendor/foundation/util/_mixins.scss */
+[data-whatinput='mouse'] .slider-handle {
+  outline: 0;
+}
+
+/* line 63, C:/Code/assets/AssetFiles/stylesheets/sass/vendor/foundation/components/_slider.scss */
+.slider-handle:hover {
+  background-color: #d9d9d9;
+}
+
+/* line 67, C:/Code/assets/AssetFiles/stylesheets/sass/vendor/foundation/components/_slider.scss */
+.slider-handle.is-dragging {
+  transition: all 0s linear;
+}
+
+/* line 117, C:/Code/assets/AssetFiles/stylesheets/sass/vendor/foundation/components/_slider.scss */
+.slider.disabled,
+.slider[disabled] {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+/* line 123, C:/Code/assets/AssetFiles/stylesheets/sass/vendor/foundation/components/_slider.scss */
+.slider.vertical {
+  display: inline-block;
+  width: 0.5rem;
+  height: 12.5rem;
+  margin: 0 1.25rem;
+  transform: scale(1, -1);
+}
+
+/* line 84, C:/Code/assets/AssetFiles/stylesheets/sass/vendor/foundation/components/_slider.scss */
+.slider.vertical .slider-fill {
+  top: 0;
+  width: 0.5rem;
+  max-height: 100%;
+}
+
+/* line 90, C:/Code/assets/AssetFiles/stylesheets/sass/vendor/foundation/components/_slider.scss */
+.slider.vertical .slider-handle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0.7rem;
+  height: 0.7rem;
+  transform: translateX(-50%);
+}
+
+.slider {
+  border-radius: 1rem;
+  text-align: center;
+}
+
+/* line 9, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_slider.scss */
+.slider-handle {
+  box-shadow: 0.8px 0.8px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* line 12, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_slider.scss */
+.slider-handle:hover {
+  background-color: #fff;
+}
+
+/* line 16, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_slider.scss */
+.slider-handle:focus {
+  background-color: #f6f6f6;
+  outline: none;
+}
+
+/* line 21, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_slider.scss */
+.slider-handle:focus:active {
+  background-color: #fff;
+}
+
+/* line 27, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_slider.scss */
+.slider-icon {
+  color: #f05f40;
+  font-size: 2rem;
+  height: 100%;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+/* line 35, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_slider.scss */
+.slider-value {
+  color: #999999;
+  display: block;
+  margin-left: -170%;
+  width: 440%;
+}
+
+/* line 41, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_slider.scss */
+.slider-value-large + .slider-value {
+  margin-bottom: 10rem;
+}
+
+/* line 47, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_slider.scss */
+.slider-value-large {
+  margin-bottom: 5rem;
+}
+
+/* line 50, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_slider.scss */
+.slider-value-large > span:first-child {
+  color: #4e4e4e;
+  display: block;
+  font-size: 1.1rem;
+}
+
+/* line 63, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_slider.scss */
+.slider-large {
+  height: 0.8rem;
+  margin-bottom: 3.5rem;
+  max-width: 40rem;
+}
+
+@media screen and (min-width: 20em) {
+  /* line 63, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_slider.scss */
+  .slider-large {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 31.25em) {
+  /* line 63, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_slider.scss */
+  .slider-large {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 46.875em) {
+  /* line 63, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_slider.scss */
+  .slider-large {
+    margin-right: auto;
+    margin-bottom: 4rem;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  /* line 63, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_slider.scss */
+  .slider-large {
+    margin-bottom: 4.5rem;
+  }
+}
+
+/* line 84, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_slider.scss */
+.slider-large > .slider-handle {
+  height: 3rem;
+  width: 3rem;
+}
+
+/* line 89, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_slider.scss */
+.slider-large .icon {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+/* line 96, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_slider.scss */
+.slider-large-margin {
+  margin-bottom: 6rem;
+}
+
+@media screen and (min-width: 46.875em) {
+  /* line 96, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_slider.scss */
+  .slider-large-margin {
+    margin-bottom: 7rem;
+  }
+}
+
+
+/*------ Tidbit */
+
+.tidbits {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 138, C:/Code/assets/AssetFiles/stylesheets/sass/vendor/foundation/util/_mixins.scss */
+.tidbits::before, .tidbits::after {
+  content: ' ';
+  display: table;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -ms-flex-order: 1;
+      order: 1;
+}
+
+/* line 146, C:/Code/assets/AssetFiles/stylesheets/sass/vendor/foundation/util/_mixins.scss */
+.tidbits::after {
+  clear: both;
+}
+
+/* line 467, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_misc.scss */
+.tidbit {
+  display: block;
+  margin-top: 1.2rem;
+}
+
+@media screen and (min-width: 75em) {
+  /* line 467, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_misc.scss */
+  .tidbit {
+    -ms-flex: 1 1 0px;
+        flex: 1 1 0px;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    display: inline-block;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 75em) and (min-width: 31.25em) {
+  /* line 467, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_misc.scss */
+  .tidbit {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+/* line 476, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_misc.scss */
+.tidbit > b {
+  display: block;
+}
+
+/* line 480, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_misc.scss */
+.tidbit > small {
+  display: block;
+}
+
+/* line 484, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_misc.scss */
+.tidbit:first-child {
+  margin-top: 0;
+}
+
+/* line 490, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_misc.scss */
+.tidbit-callout {
+  background-color: #f05f40;
+  border-top: 1px solid #fff;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 0.4rem;
+  margin-bottom: 0.25rem;
+  padding: 0.6rem 1rem 0.65rem;
+  position: relative;
+  text-align: center;
+}
+
+@media screen and (min-width: 31.25em) {
+  /* line 490, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_misc.scss */
+  .tidbit-callout {
+    font-size: 1.8rem;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 46.875em) {
+  /* line 490, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_misc.scss */
+  .tidbit-callout {
+    font-size: 2rem;
+    padding: 0.7rem 1.5rem 0.8rem;
+  }
+}
+
+/* line 513, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_misc.scss */
+.tidbit-callout:before, .tidbit-callout:after {
+  content: '';
+  background-color: #f05f40;
+  border-top: 1px solid #fff;
+  display: block;
+  height: 3px;
+  position: absolute;
+  top: -4px;
+  right: 2px;
+  left: 2px;
+}
+
+/* line 526, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_misc.scss */
+.tidbit-callout:after {
+  top: -7px;
+  right: 4px;
+  left: 4px;
+}
+
+.margin-top-large {
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 46.875em) {
+  /* line 104, C:/Code/assets/AssetFiles/stylesheets/sass/base/_typography.scss */
+  .margin-top-large {
+    margin-top: 3.9rem;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  /* line 104, C:/Code/assets/AssetFiles/stylesheets/sass/base/_typography.scss */
+  .margin-top-large {
+    margin-top: 6rem;
+  }
+}
+
+
+/*----- icon*/
+
+.icon {
+  display: inline-block;
+  /*width: 1em;*/
+  /*height: 1em;*/
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.reveal-body .icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.hero-indicator .icon {
+  background-color: #bababa;
+  border: 1px solid #c7c7c7;
+  border-radius: 50%;
+  color: #fff;
+  display: none;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0.6em 0.5em 0.4em;
+  vertical-align: bottom;
+  width: 2.5rem;
+}
+
+@media screen and (min-width: 46.875em) {
+  /* line 26, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_media.scss */
+  .hero-indicator .icon {
+    display: inline-block;
+  }
+}
+
+/* line 42, C:/Code/assets/AssetFiles/stylesheets/sass/modules/_media.scss */
+.hero-indicator.hero-indicator-light .icon {
+  background-color: #fff;
+  color: #bababa;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+
+@media screen and (min-width: 31.25em) {
+  /* line 4, C:/Code/assets/AssetFiles/stylesheets/sass/base/_typography.scss */
+  html {
+    font-size: 112.5%;
+  }
+}
+
+
+
+@media screen and (min-width: 46.875em) {
+  /* line 4, C:/Code/assets/AssetFiles/stylesheets/sass/base/_typography.scss */
+  html {
+    font-size: 125%;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  /* line 4, C:/Code/assets/AssetFiles/stylesheets/sass/base/_typography.scss */
+  html {
+    font-size: 137.5%;
+  }
+}
+
+/*-----  abbr*/
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+abbr {
+  color: #636363;
+  cursor: help;
+  border-bottom: 1px dotted #0a0a0a;
+}
+
+  /*abbr[title]:after {*/
+  /*  content: " (" attr(title) ")";*/
+  /*}*/
+  
+  .brief-list > dt > abbr {
+  border: none;
+  color: inherit;
+}
+
+[data-toggle] {
+  cursor: pointer;
+}

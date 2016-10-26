@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Waylo: Hotel Booking made free</title>
+    <meta name="description" content="WayLo is a travel-hacker bot that makes hotel booking easy and saves your money!" property="description">
+    <meta name="keywords" content=" Travel, App,airfare,hotel,Cheap Flights, Hotels, Hotel, Vacations, Cruises, Cheap Airfare, Airline Tickets, Travel Agency, Car Rental, Crowdsource,Hotel Reservations, Vacation Packages, Cruise Deals, RomeAmore, RoamAmore, Rome Amore, Roam, Rome, Amore, WayLo, WayLow, Way Low, thewaylo, Facebook, Messenger" property="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1" property="viewport">
+    <meta name="og:title" content="WayLo" property="og:title">
+    <meta name="og:description" content="WayLo is a hotel booking Facebook chat bot specializing in finding discounts on hotel reservations!" property="og:description">
+    <meta name="og:image" content="" property="og:image">
+ 
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Slider CSS -->
+    <link rel="stylesheet" href="css/slider.css" type="text/css">
+
+
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>-->
+    
+
+    <!-- Owl Carousel CSS -->
+    <!--<link href="css/custom.css" rel="stylesheet">-->
+    <!--<link rel="stylesheet" href="css/owl.carousel.css">-->
+    <!--<link rel="stylesheet" href="css/owl.theme.css">-->
+    
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <!--<link rel="stylesheet" href="css/animate.css" type="text/css">-->
+
+
+    <!-- Custom CSS -->
+    <link href="css/general.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    
+    <!-- bxSlider CSS file -->
+    <link href="css/bxslider.css" rel="stylesheet" />
+    
+    <!-- Lightbox -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--<script>window.location = "http://launcha.roamamore.com";</script>-->
+    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+
+</head>
+
+<body id="page-top">
+    
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-home" viewBox="0 0 100 99.375">
+                <title>home</title>
+                <!--<path class="path1" d="M31.776 16l-7.168-7.168v-4.48c0-0.448-0.352-0.8-0.8-0.8s-0.8 0.352-0.8 0.8v2.88l-5.76-5.76c-0.32-0.32-0.768-0.512-1.248-0.512s-0.928 0.192-1.248 0.512l-14.528 14.528c-0.32 0.32-0.32 0.832 0 1.12 0.32 0.32 0.832 0.32 1.12 0l14.528-14.528c0.064-0.064 0.16-0.064 0.224 0l14.528 14.528c0.16 0.16 0.352 0.224 0.576 0.224 0.192 0 0.416-0.064 0.576-0.224 0.288-0.32 0.288-0.8 0-1.12z"></path>-->
+                <!--<path class="path2" d="M26.4 15.648c-0.448 0-0.8 0.352-0.8 0.8v12.736c0 0.128-0.064 0.224-0.096 0.224h-6.304v-6.56c0-0.8-0.64-1.44-1.44-1.44h-3.52c-0.8 0-1.44 0.64-1.44 1.44v6.56h-6.304c-0.032 0-0.096-0.096-0.096-0.224v-12.736c0-0.448-0.352-0.8-0.8-0.8s-0.8 0.352-0.8 0.8v12.736c0 1.024 0.768 1.824 1.696 1.824h7.104c0.448 0 0.8-0.352 0.8-0.8v-7.2h3.2v7.2c0 0.448 0.352 0.8 0.8 0.8h7.104c0.928 0 1.696-0.832 1.696-1.824v-12.736c0-0.448-0.352-0.8-0.8-0.8z"></path>-->
+                <path d="M10.924,84.883v14.492H3.333V46.328c0-2.096,1.699-3.815,3.795-3.815l0,0c2.123,0,3.795,1.719,3.795,3.815v31.367H96.55  v21.68h-7.656V84.883H10.924z"></path><path d="M22.624,61.614c3.796,0,6.869-3.072,6.869-6.888c0-3.789-3.073-6.862-6.869-6.862c-3.815,0-6.888,3.073-6.888,6.862  C15.736,58.542,18.809,61.614,22.624,61.614z">
+                </path>
+                <path d="M96.667,71.992l-0.026-9.466c-0.026-3.008-2.552-5.078-5.481-5.443l-54.05-5.377c-0.117-0.026-0.208-0.078-0.306-0.078  c-1.862,0-3.379,1.523-3.379,3.372v10.208H19.284c-1.888,0-3.398,1.537-3.398,3.398c0,1.875,1.511,3.386,3.398,3.386H96.667z"></path>
+                <polygon points="100,24.883 50.065,0.065 50.045,0 50,0.026 49.955,0 49.935,0.065 0,24.883 4.16,33.255 50,10.469 95.84,33.255 "></polygon>
+            </symbol>
+        
+            <symbol id="bot-iphone1" viewBox="0 0 367 765" >
+                <g transform="translate(-536.000000, -1488.000000)">
+                    <g transform="translate(536.000000, 1488.000000)">
+                    <!--<path d="M317.597503,765 C342.167353,765 362.02882,742.409073 362.02882,714.601546 L362.02882,51.0964204 C362.02882,23.287178 342.167637,0.695930446 317.597503,0.695930446 L48.70824,0.695930446 C24.1381066,0.695930446 4.27692293,23.287178 4.27692293,51.0964204 L4.27692293,714.601546 C4.27692293,742.409073 24.1383906,765 48.70824,765 L317.597503,765 Z M6.27692293,714.601546 L6.27692293,51.0964204 C6.27692293,24.3385313 25.3041002,2.69593045 48.70824,2.69593045 L317.597503,2.69593045 C341.001643,2.69593045 360.02882,24.3385313 360.02882,51.0964204 L360.02882,714.601546 C360.02882,741.357709 341.001374,763 317.597503,763 L48.70824,763 C25.3043699,763 6.27692293,741.357709 6.27692293,714.601546 Z" id="Stroke-3" fill="#8590A1"></path>-->
+                        <path d="M317.597503,765 C342.167353,765 362.02882,742.409073 362.02882,714.601546 L362.02882,51.0964204 C362.02882,23.287178 342.167637,0.695930446 317.597503,0.695930446 L48.70824,0.695930446 C24.1381066,0.695930446 4.27692293,23.287178 4.27692293,51.0964204 L4.27692293,714.601546 C4.27692293,742.409073 24.1383906,765 48.70824,765 L317.597503,765 Z" id="Stroke-3" fill="#fff"></path>
+                        <polygon fill="#EBEBEB" points="16.8730488 658.451174 349.434032 658.451174 349.434032 68.1646409 16.8730488 68.1646409"></polygon>
+                        <path d="M237.604572,49.8500986 L146.178606,49.8500986 C143.022406,49.8500986 140.464148,47.2935409 140.464148,44.1394393 L140.464148,44.1394393 C140.464148,40.9853378 143.022406,38.4287801 146.178606,38.4287801 L237.604572,38.4287801 C240.760772,38.4287801 243.319031,40.9853378 243.319031,44.1394393 L243.319031,44.1394393 C243.319031,47.2935409 240.760772,49.8500986 237.604572,49.8500986" id="Fill-7" fill="#8590A1"></path>
+                        <path d="M134.074588,44.3099362 C134.074588,47.3692179 131.59331,49.8506353 128.530203,49.8506353 C125.468886,49.8506353 122.985818,47.3692179 122.985818,44.3099362 C122.985818,41.2506544 125.468886,38.769237 128.530203,38.769237 C131.59331,38.769237 134.074588,41.2506544 134.074588,44.3099362" id="Fill-8" fill="#8590A1"></path>
+                        <path d="M204.135758,705.969387 C204.135758,719.80235 192.914509,731.016138 179.072343,731.016138 C165.230177,731.016138 154.008929,719.80235 154.008929,705.969387 C154.008929,692.136424 165.230177,680.922636 179.072343,680.922636 C192.914509,680.922636 204.135758,692.136424 204.135758,705.969387" id="Fill-9" fill="#8590A1" opacity="0.556086754"></path>
+                        <path d="M187.127034,21.0373895 C187.127034,23.2307693 185.347532,25.0090886 183.152693,25.0090886 C180.957854,25.0090886 179.178351,23.2307693 179.178351,21.0373895 C179.178351,18.8440097 180.957854,17.0656904 183.152693,17.0656904 C185.347532,17.0656904 187.127034,18.8440097 187.127034,21.0373895" id="Fill-10" fill="#8590A1"></path>
+                        <polygon id="Fill-13" fill="#8590A1" points="361.029537 213.065903 366.305385 213.065903 366.305385 164.814686 361.029537 164.814686"></polygon>
+                        <g id="Group-17" transform="translate(0.000000, 98.287966)" fill="#8590A1">
+                            <polygon points="0 39.4875853 5.27584878 39.4875853 5.27584878 0.569294789 0 0.569294789"></polygon>
+                            <polygon points="0 123.116172 5.27584878 123.116172 5.27584878 84.1978811 0 84.1978811"></polygon>
+                            <polygon points="0 176.06615 5.27584878 176.06615 5.27584878 137.147859 0 137.147859"></polygon>
+                        </g>
+                    </g>
+                </g>
+                <image xlink:href="img/IMG_2020.jpg" x="17" y="0" height="720" width="335"/>
+                
+            </symbol>
+            <symbol id="bot-iphone2" viewBox="0 0 367 765" >
+                <g transform="translate(-536.000000, -1488.000000)">
+                    <g transform="translate(536.000000, 1488.000000)">
+                    <path d="M317.597503,765 C342.167353,765 362.02882,742.409073 362.02882,714.601546 L362.02882,51.0964204 C362.02882,23.287178 342.167637,0.695930446 317.597503,0.695930446 L48.70824,0.695930446 C24.1381066,0.695930446 4.27692293,23.287178 4.27692293,51.0964204 L4.27692293,714.601546 C4.27692293,742.409073 24.1383906,765 48.70824,765 L317.597503,765 Z M6.27692293,714.601546 L6.27692293,51.0964204 C6.27692293,24.3385313 25.3041002,2.69593045 48.70824,2.69593045 L317.597503,2.69593045 C341.001643,2.69593045 360.02882,24.3385313 360.02882,51.0964204 L360.02882,714.601546 C360.02882,741.357709 341.001374,763 317.597503,763 L48.70824,763 C25.3043699,763 6.27692293,741.357709 6.27692293,714.601546 Z" id="Stroke-3" fill="#8590A1"></path>
+                        <path d="M317.597503,765 C342.167353,765 362.02882,742.409073 362.02882,714.601546 L362.02882,51.0964204 C362.02882,23.287178 342.167637,0.695930446 317.597503,0.695930446 L48.70824,0.695930446 C24.1381066,0.695930446 4.27692293,23.287178 4.27692293,51.0964204 L4.27692293,714.601546 C4.27692293,742.409073 24.1383906,765 48.70824,765 L317.597503,765 Z" id="Stroke-3" fill="#fff"></path>
+                        <polygon fill="#EBEBEB" points="16.8730488 658.451174 349.434032 658.451174 349.434032 68.1646409 16.8730488 68.1646409"></polygon>
+                        <path d="M237.604572,49.8500986 L146.178606,49.8500986 C143.022406,49.8500986 140.464148,47.2935409 140.464148,44.1394393 L140.464148,44.1394393 C140.464148,40.9853378 143.022406,38.4287801 146.178606,38.4287801 L237.604572,38.4287801 C240.760772,38.4287801 243.319031,40.9853378 243.319031,44.1394393 L243.319031,44.1394393 C243.319031,47.2935409 240.760772,49.8500986 237.604572,49.8500986" id="Fill-7" fill="#8590A1"></path>
+                        <path d="M134.074588,44.3099362 C134.074588,47.3692179 131.59331,49.8506353 128.530203,49.8506353 C125.468886,49.8506353 122.985818,47.3692179 122.985818,44.3099362 C122.985818,41.2506544 125.468886,38.769237 128.530203,38.769237 C131.59331,38.769237 134.074588,41.2506544 134.074588,44.3099362" id="Fill-8" fill="#8590A1"></path>
+                        <path d="M204.135758,705.969387 C204.135758,719.80235 192.914509,731.016138 179.072343,731.016138 C165.230177,731.016138 154.008929,719.80235 154.008929,705.969387 C154.008929,692.136424 165.230177,680.922636 179.072343,680.922636 C192.914509,680.922636 204.135758,692.136424 204.135758,705.969387" id="Fill-9" fill="#8590A1" opacity="0.556086754"></path>
+                        <path d="M187.127034,21.0373895 C187.127034,23.2307693 185.347532,25.0090886 183.152693,25.0090886 C180.957854,25.0090886 179.178351,23.2307693 179.178351,21.0373895 C179.178351,18.8440097 180.957854,17.0656904 183.152693,17.0656904 C185.347532,17.0656904 187.127034,18.8440097 187.127034,21.0373895" id="Fill-10" fill="#8590A1"></path>
+                        <polygon id="Fill-13" fill="#8590A1" points="361.029537 213.065903 366.305385 213.065903 366.305385 164.814686 361.029537 164.814686"></polygon>
+                        <g id="Group-17" transform="translate(0.000000, 98.287966)" fill="#8590A1">
+                            <polygon points="0 39.4875853 5.27584878 39.4875853 5.27584878 0.569294789 0 0.569294789"></polygon>
+                            <polygon points="0 123.116172 5.27584878 123.116172 5.27584878 84.1978811 0 84.1978811"></polygon>
+                            <polygon points="0 176.06615 5.27584878 176.06615 5.27584878 137.147859 0 137.147859"></polygon>
+                        </g>
+                    </g>
+                </g>
+                <image xlink:href="img/IMG_2022.jpg" x="17" y="0" height="720" width="335"/>
+                
+            </symbol>
+            <symbol id="bot-iphone3" viewBox="0 0 367 765" >
+                <g transform="translate(-536.000000, -1488.000000)">
+                    <g transform="translate(536.000000, 1488.000000)">
+                    <!--<path d="M317.597503,765 C342.167353,765 362.02882,742.409073 362.02882,714.601546 L362.02882,51.0964204 C362.02882,23.287178 342.167637,0.695930446 317.597503,0.695930446 L48.70824,0.695930446 C24.1381066,0.695930446 4.27692293,23.287178 4.27692293,51.0964204 L4.27692293,714.601546 C4.27692293,742.409073 24.1383906,765 48.70824,765 L317.597503,765 Z M6.27692293,714.601546 L6.27692293,51.0964204 C6.27692293,24.3385313 25.3041002,2.69593045 48.70824,2.69593045 L317.597503,2.69593045 C341.001643,2.69593045 360.02882,24.3385313 360.02882,51.0964204 L360.02882,714.601546 C360.02882,741.357709 341.001374,763 317.597503,763 L48.70824,763 C25.3043699,763 6.27692293,741.357709 6.27692293,714.601546 Z" id="Stroke-3" fill="#8590A1"></path>-->
+                        <path d="M317.597503,765 C342.167353,765 362.02882,742.409073 362.02882,714.601546 L362.02882,51.0964204 C362.02882,23.287178 342.167637,0.695930446 317.597503,0.695930446 L48.70824,0.695930446 C24.1381066,0.695930446 4.27692293,23.287178 4.27692293,51.0964204 L4.27692293,714.601546 C4.27692293,742.409073 24.1383906,765 48.70824,765 L317.597503,765 Z" id="Stroke-3" fill="#fff"></path>
+                        <polygon fill="#EBEBEB" points="16.8730488 658.451174 349.434032 658.451174 349.434032 68.1646409 16.8730488 68.1646409"></polygon>
+                        <path d="M237.604572,49.8500986 L146.178606,49.8500986 C143.022406,49.8500986 140.464148,47.2935409 140.464148,44.1394393 L140.464148,44.1394393 C140.464148,40.9853378 143.022406,38.4287801 146.178606,38.4287801 L237.604572,38.4287801 C240.760772,38.4287801 243.319031,40.9853378 243.319031,44.1394393 L243.319031,44.1394393 C243.319031,47.2935409 240.760772,49.8500986 237.604572,49.8500986" id="Fill-7" fill="#8590A1"></path>
+                        <path d="M134.074588,44.3099362 C134.074588,47.3692179 131.59331,49.8506353 128.530203,49.8506353 C125.468886,49.8506353 122.985818,47.3692179 122.985818,44.3099362 C122.985818,41.2506544 125.468886,38.769237 128.530203,38.769237 C131.59331,38.769237 134.074588,41.2506544 134.074588,44.3099362" id="Fill-8" fill="#8590A1"></path>
+                        <path d="M204.135758,705.969387 C204.135758,719.80235 192.914509,731.016138 179.072343,731.016138 C165.230177,731.016138 154.008929,719.80235 154.008929,705.969387 C154.008929,692.136424 165.230177,680.922636 179.072343,680.922636 C192.914509,680.922636 204.135758,692.136424 204.135758,705.969387" id="Fill-9" fill="#8590A1" opacity="0.556086754"></path>
+                        <path d="M187.127034,21.0373895 C187.127034,23.2307693 185.347532,25.0090886 183.152693,25.0090886 C180.957854,25.0090886 179.178351,23.2307693 179.178351,21.0373895 C179.178351,18.8440097 180.957854,17.0656904 183.152693,17.0656904 C185.347532,17.0656904 187.127034,18.8440097 187.127034,21.0373895" id="Fill-10" fill="#8590A1"></path>
+                        <polygon id="Fill-13" fill="#8590A1" points="361.029537 213.065903 366.305385 213.065903 366.305385 164.814686 361.029537 164.814686"></polygon>
+                        <g id="Group-17" transform="translate(0.000000, 98.287966)" fill="#8590A1">
+                            <polygon points="0 39.4875853 5.27584878 39.4875853 5.27584878 0.569294789 0 0.569294789"></polygon>
+                            <polygon points="0 123.116172 5.27584878 123.116172 5.27584878 84.1978811 0 84.1978811"></polygon>
+                            <polygon points="0 176.06615 5.27584878 176.06615 5.27584878 137.147859 0 137.147859"></polygon>
+                        </g>
+                    </g>
+                </g>
+                <image xlink:href="img/IMG_2023.jpg" x="17" y="0" height="720" width="335"/>
+                
+            </symbol>
+            <symbol id="bot-iphone4" viewBox="0 0 367 765" >
+                <g transform="translate(-536.000000, -1488.000000)">
+                    <g transform="translate(536.000000, 1488.000000)">
+                    <!--<path d="M317.597503,765 C342.167353,765 362.02882,742.409073 362.02882,714.601546 L362.02882,51.0964204 C362.02882,23.287178 342.167637,0.695930446 317.597503,0.695930446 L48.70824,0.695930446 C24.1381066,0.695930446 4.27692293,23.287178 4.27692293,51.0964204 L4.27692293,714.601546 C4.27692293,742.409073 24.1383906,765 48.70824,765 L317.597503,765 Z M6.27692293,714.601546 L6.27692293,51.0964204 C6.27692293,24.3385313 25.3041002,2.69593045 48.70824,2.69593045 L317.597503,2.69593045 C341.001643,2.69593045 360.02882,24.3385313 360.02882,51.0964204 L360.02882,714.601546 C360.02882,741.357709 341.001374,763 317.597503,763 L48.70824,763 C25.3043699,763 6.27692293,741.357709 6.27692293,714.601546 Z" id="Stroke-3" fill="#8590A1"></path>-->
+                        <path d="M317.597503,765 C342.167353,765 362.02882,742.409073 362.02882,714.601546 L362.02882,51.0964204 C362.02882,23.287178 342.167637,0.695930446 317.597503,0.695930446 L48.70824,0.695930446 C24.1381066,0.695930446 4.27692293,23.287178 4.27692293,51.0964204 L4.27692293,714.601546 C4.27692293,742.409073 24.1383906,765 48.70824,765 L317.597503,765 Z" id="Stroke-3" fill="#fff"></path>
+                        <polygon fill="#EBEBEB" points="16.8730488 658.451174 349.434032 658.451174 349.434032 68.1646409 16.8730488 68.1646409"></polygon>
+                        <path d="M237.604572,49.8500986 L146.178606,49.8500986 C143.022406,49.8500986 140.464148,47.2935409 140.464148,44.1394393 L140.464148,44.1394393 C140.464148,40.9853378 143.022406,38.4287801 146.178606,38.4287801 L237.604572,38.4287801 C240.760772,38.4287801 243.319031,40.9853378 243.319031,44.1394393 L243.319031,44.1394393 C243.319031,47.2935409 240.760772,49.8500986 237.604572,49.8500986" id="Fill-7" fill="#8590A1"></path>
+                        <path d="M134.074588,44.3099362 C134.074588,47.3692179 131.59331,49.8506353 128.530203,49.8506353 C125.468886,49.8506353 122.985818,47.3692179 122.985818,44.3099362 C122.985818,41.2506544 125.468886,38.769237 128.530203,38.769237 C131.59331,38.769237 134.074588,41.2506544 134.074588,44.3099362" id="Fill-8" fill="#8590A1"></path>
+                        <path d="M204.135758,705.969387 C204.135758,719.80235 192.914509,731.016138 179.072343,731.016138 C165.230177,731.016138 154.008929,719.80235 154.008929,705.969387 C154.008929,692.136424 165.230177,680.922636 179.072343,680.922636 C192.914509,680.922636 204.135758,692.136424 204.135758,705.969387" id="Fill-9" fill="#8590A1" opacity="0.556086754"></path>
+                        <path d="M187.127034,21.0373895 C187.127034,23.2307693 185.347532,25.0090886 183.152693,25.0090886 C180.957854,25.0090886 179.178351,23.2307693 179.178351,21.0373895 C179.178351,18.8440097 180.957854,17.0656904 183.152693,17.0656904 C185.347532,17.0656904 187.127034,18.8440097 187.127034,21.0373895" id="Fill-10" fill="#8590A1"></path>
+                        <polygon id="Fill-13" fill="#8590A1" points="361.029537 213.065903 366.305385 213.065903 366.305385 164.814686 361.029537 164.814686"></polygon>
+                        <g id="Group-17" transform="translate(0.000000, 98.287966)" fill="#8590A1">
+                            <polygon points="0 39.4875853 5.27584878 39.4875853 5.27584878 0.569294789 0 0.569294789"></polygon>
+                            <polygon points="0 123.116172 5.27584878 123.116172 5.27584878 84.1978811 0 84.1978811"></polygon>
+                            <polygon points="0 176.06615 5.27584878 176.06615 5.27584878 137.147859 0 137.147859"></polygon>
+                        </g>
+                    </g>
+                </g>
+                <image xlink:href="img/IMG_2027.jpg" x="17" y="0" height="720" width="335"/>
+                
+            </symbol>
+            <symbol id="bot-iphone5" viewBox="0 0 367 765" >
+                <g transform="translate(-536.000000, -1488.000000)">
+                    <g transform="translate(536.000000, 1488.000000)">
+                        <path d="M317.597503,765 C342.167353,765 362.02882,742.409073 362.02882,714.601546 L362.02882,51.0964204 C362.02882,23.287178 342.167637,0.695930446 317.597503,0.695930446 L48.70824,0.695930446 C24.1381066,0.695930446 4.27692293,23.287178 4.27692293,51.0964204 L4.27692293,714.601546 C4.27692293,742.409073 24.1383906,765 48.70824,765 L317.597503,765 Z M6.27692293,714.601546 L6.27692293,51.0964204 C6.27692293,24.3385313 25.3041002,2.69593045 48.70824,2.69593045 L317.597503,2.69593045 C341.001643,2.69593045 360.02882,24.3385313 360.02882,51.0964204 L360.02882,714.601546 C360.02882,741.357709 341.001374,763 317.597503,763 L48.70824,763 C25.3043699,763 6.27692293,741.357709 6.27692293,714.601546 Z" id="Stroke-3" fill="#8590A1"></path>
+                        <path d="M317.597503,765 C342.167353,765 362.02882,742.409073 362.02882,714.601546 L362.02882,51.0964204 C362.02882,23.287178 342.167637,0.695930446 317.597503,0.695930446 L48.70824,0.695930446 C24.1381066,0.695930446 4.27692293,23.287178 4.27692293,51.0964204 L4.27692293,714.601546 C4.27692293,742.409073 24.1383906,765 48.70824,765 L317.597503,765 Z" id="Stroke-3" fill="#fff"></path>
+                        <polygon fill="#EBEBEB" points="16.8730488 658.451174 349.434032 658.451174 349.434032 68.1646409 16.8730488 68.1646409"></polygon>
+                        <path d="M237.604572,49.8500986 L146.178606,49.8500986 C143.022406,49.8500986 140.464148,47.2935409 140.464148,44.1394393 L140.464148,44.1394393 C140.464148,40.9853378 143.022406,38.4287801 146.178606,38.4287801 L237.604572,38.4287801 C240.760772,38.4287801 243.319031,40.9853378 243.319031,44.1394393 L243.319031,44.1394393 C243.319031,47.2935409 240.760772,49.8500986 237.604572,49.8500986" id="Fill-7" fill="#8590A1"></path>
+                        <path d="M134.074588,44.3099362 C134.074588,47.3692179 131.59331,49.8506353 128.530203,49.8506353 C125.468886,49.8506353 122.985818,47.3692179 122.985818,44.3099362 C122.985818,41.2506544 125.468886,38.769237 128.530203,38.769237 C131.59331,38.769237 134.074588,41.2506544 134.074588,44.3099362" id="Fill-8" fill="#8590A1"></path>
+                        <path d="M204.135758,705.969387 C204.135758,719.80235 192.914509,731.016138 179.072343,731.016138 C165.230177,731.016138 154.008929,719.80235 154.008929,705.969387 C154.008929,692.136424 165.230177,680.922636 179.072343,680.922636 C192.914509,680.922636 204.135758,692.136424 204.135758,705.969387" id="Fill-9" fill="#8590A1" opacity="0.556086754"></path>
+                        <path d="M187.127034,21.0373895 C187.127034,23.2307693 185.347532,25.0090886 183.152693,25.0090886 C180.957854,25.0090886 179.178351,23.2307693 179.178351,21.0373895 C179.178351,18.8440097 180.957854,17.0656904 183.152693,17.0656904 C185.347532,17.0656904 187.127034,18.8440097 187.127034,21.0373895" id="Fill-10" fill="#8590A1"></path>
+                        <polygon id="Fill-13" fill="#8590A1" points="361.029537 213.065903 366.305385 213.065903 366.305385 164.814686 361.029537 164.814686"></polygon>
+                        <g id="Group-17" transform="translate(0.000000, 98.287966)" fill="#8590A1">
+                            <polygon points="0 39.4875853 5.27584878 39.4875853 5.27584878 0.569294789 0 0.569294789"></polygon>
+                            <polygon points="0 123.116172 5.27584878 123.116172 5.27584878 84.1978811 0 84.1978811"></polygon>
+                            <polygon points="0 176.06615 5.27584878 176.06615 5.27584878 137.147859 0 137.147859"></polygon>
+                        </g>
+                    </g>
+                </g>
+                <image xlink:href="img/IMG_2029.jpg" x="17" y="0" height="720" width="335"/>
+                
+            </symbol>
+
+        </defs>
+    </svg>
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">-->
+                <!--<button type="button" class="navbar-toggle collapsed">-->
+                <a href="#signup" class="btn btn-primary navbar-toggle collapsed mybutton_sign" target="_top">
+                    <span class="sr-only">Toggle navigation</span>
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                    <span>Get Access</span>
+                <!--</button>-->
+                </a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="img/waylo_logo_new.png" height="42" width="132"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">What</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">How</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#shots">Sneak Peek</a> 
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#signup">Sign Up</a> 
+                    </li>
+                    <li>
+                        <!--<a class="page-scroll" href="https://angel.co/roamamore/jobs" target="_blank">Careers</a> -->
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="intro-header">
+    		<div class="col-xs-12 text-center abcen1" >
+    			<!--<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s" style="font-family: 'Lato';"> Hotel Booking made free</h1>-->
+    			<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s"> Want a free night on every hotel booking?</h1>
+    			
+    			<!--<img class="rotate" src="https://dl.dropboxusercontent.com/s/jfd3zjb6fh5qbwn/Overpay%202.png" alt="40%" width="150" height="150">-->
+                <!--<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Stop Overpaying for Hotels</h3>-->
+    			
+    			<br />
+    			<br />
+    			<ul class="list-inline intro-social-buttons">
+    
+    				<li id="download" ><a href="https://youtu.be/PJYLeXqXGL0" class="btn  btn-lg mybutton_demo wow swing wow fadeIn" data-wow-delay="1.2s" data-norelated data-toggle="lightbox"><span class="network-name">Watch Video</span></a>
+                    </li>
+    				<li><a href="#signup" class="btn btn-lg mybutton_sign wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Get Access</span></a>
+    				</li>
+    			</ul>
+    			
+    		</div>    
+            <!-- /.container -->
+    		<div class="col-xs-12 text-center abcen wow fadeIn" >
+         	    <!--<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s" > Never pay the premium that hotel booking websites secretly charge you. </h3>-->
+                <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s" > Waylo: Travel Booking made free </a> </h3>
+    
+    			<div class="button_down"> 
+    						
+    				<!--<a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#whatis"> <img class="img_scroll" src="img/icon/circle.png" alt=""> </a>-->
+    				<a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#about"> <img class="img_scroll" src="http://cliparts.co/cliparts/ziX/5yr/ziX5yr5kT.png" alt=""> </a>
+    
+    				
+    				
+    			</div>
+    		</div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">What is Waylo</h2>
+                    <hr class="light">
+                    <p class="text-faded">Waylo is your cool travel expert buddy. Yeah, she is a smart bot who uses her expertise to help you save on hotel stays. If she likes you, she'll even get you a free night on every hotel booking. </p>
+                    <p class="text-faded"> You can text her or ping her on Facebook Messenger anytime day or night. </p>
+
+                    <a href="#services" class="btn btn-default btn-xl" target="_top">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">How it works</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-comments-o  wow bounceIn text-primary"></i>
+                        <h3>Ping Waylo</h3>
+                        <p class="text-muted"> Message Waylo on Facebook Messenger, SMS or Email. Slack and web-app coming soon.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-trophy wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>Win a free night</h3>
+                        <p class="text-muted"> Tell Waylo when and where you are traveling and complete a hotel booking in under 2 mins. 1 in 10 users earn a free night.</p>
+                    </div>
+                </div>
+
+                <!--<div class="col-lg-3 col-md-6 text-center">-->
+                <!--    <div class="service-box">-->
+                <!--        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>-->
+                <!--        <h3>Type your request</h3>-->
+                <!--        <p class="text-muted"> Answer a few simple questions and complete a hotel booking in less than 2 mins.</p>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--<div class="col-lg-3 col-md-6 text-center">-->
+                <!--    <div class="service-box">-->
+                <!--        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>-->
+                <!--        <h3> Win a free night?</h3>-->
+                <!--        <p class="text-muted"> 1 in 10 users win a free night on their reservation. </p>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-usd wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <i class="fa fa-4x fa-usd wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <i class="fa fa-4x fa-usd wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Smart price guarantee</h3>
+                        <!--<p class="text-muted"> If another website has a cheaper price, Waylo will send you a refund. It's automatic. No more filing price guarantee claims. </p>-->
+                        <p class="text-muted"> If Waylo detects a cheaper price on another website, we'll send you a refund. It's automatic. No more filing price guarantee claims. </p>
+                    
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-magic wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Book without anxiety</h3>
+                        <p class="text-muted"> Price dropped after you booked? No worries. For most reservations, Waylo monitors hotel prices and refunds automatically. It's like magic.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-primary" id="shots"> 
+        <div class="container text-center">
+            <h2 class="section-heading">Sneak Peek</h2>
+            <hr class="light">
+            <ul class="bxslider">
+                <li>
+                    <svg width="367px" height="700px" class="iphone-img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bot-iphone1">
+                
+                        </use>
+                        <!--<image xlink:href="img/IMG_2020.jpg" x="0" y="0" height="50px" width="50px"/-->
+                    </svg>
+                </li>
+                <li>
+                    <svg width="367px" height="700px" class="iphone-img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bot-iphone2">
+                
+                        </use>
+                        <!--<image xlink:href="img/IMG_2020.jpg" x="0" y="0" height="50px" width="50px"/-->
+                    </svg>
+                </li>
+                <li>
+                    <svg width="367px" height="700px" class="iphone-img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bot-iphone3">
+                
+                        </use>
+                        <!--<image xlink:href="img/IMG_2020.jpg" x="0" y="0" height="50px" width="50px"/-->
+                    </svg>
+                </li>
+                <li>
+                    <svg width="367px" height="700px" class="iphone-img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bot-iphone4">
+                
+                        </use>
+                        <!--<image xlink:href="img/IMG_2020.jpg" x="0" y="0" height="50px" width="50px"/-->
+                    </svg>
+                </li>
+                                <li>
+                    <svg width="367px" height="700px" class="iphone-img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bot-iphone5">
+                
+                        </use>
+                        <!--<image xlink:href="img/IMG_2020.jpg" x="0" y="0" height="50px" width="50px"/-->
+                    </svg>
+                </li>
+
+             </ul>
+        </div>
+    </section>
+    <section id="calculate">
+        <!-- How much can you save? -->
+        <div class="container">
+          <div class="row">
+            <div class="column text-center margin-top-large">
+                <h2 class="section-heading">How much can you save</h2>
+                <hr >
+              <!--<h2>How much can you save?</h2>-->
+                <p class="margin-bottom-medium"> Every day, Waylo awards a free night to 1 in 10 users. What happens if you don't win? You can try again in 24 hours. Even without the free night, you'll save with Waylo. </p>
+                <p class="margin-bottom-medium"> Why? Most websites charge a 15-30% commission from hotels who in turn increase prices to cover the expense.</p>
+                <!--<p class="margin-bottom-medium"> Waylo believes you shouldn't have to overpay. Waylo's friends save an average of 13% compared to other websites on every hotel booking. Waylo often throws in a free night as an added bonus.</p>-->
+                <p class="margin-bottom-medium"> Waylo refunds you most of the commission. No doubt Waylo's friends save an average of 13% over other websites. </p>
+                <p class="margin-bottom-medium"> Tap the slider to your hotel price to see how much you can save with Waylo, compared to other websites.</p>
+                <div class="slider slider-large" id="moneySlider" data-slider data-initial-start="300" data-start="0" data-end="1000">
+                <!-- data-step="1000" is not yet implemented in Foundation 6 :( -->
+                <span class="slider-handle" id="moneySliderHandle" data-slider-handle role="slider" tabindex="1">
+                  <svg class="icon icon-home slider-icon"><use xlink:href="#icon-home"></use></svg>
+                  <span class="slider-value">
+                    <sup>$</sup><span id="sliderValue"></span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="row margin-bottom-large">
+            <div class="column text-center">
+              <ul class="tidbits">
+                <li class="tidbit">
+                  <span class="tidbit-callout">
+                    Save $<span id="savingsAmount"></span>
+                  </span>
+                  <small>
+                    on a <abbr data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="Assuming 13% saving. You will save even more in most case or even get a free hotel night.">3 night hotel stay @13% savings</abbr>
+                  </small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+    </section>
+ 
+    <section id ="testimonial" class="s_padding s_reccal bg-primary">
+				
+		<div class="container">
+		    <div class="row">
+			
+
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">People love Waylo</h2>
+                    <hr class="light">
+                </div>
+
+
+		    </div>
+
+    		<div class="row">
+    			<div class="col-md-8 col-md-offset-2">
+    				
+    				<div class="reccal-slider" style="background:#fff">
+    				<!--<div style="background:#fff">	-->
+    					<ul class="bxslider1 bxwrapper1">
+                            					<!--<ul class="bxslider bxwrapper">-->
+    						<li>
+    						    <div>
+        							<img src="https://media.licdn.com/media/p/6/000/202/0d9/33c1db3.jpg" alt="Sahil B">
+        							<div class="row">
+        								<div class="col-md-10 col-md-offset-1">
+        
+        									<p class = 's_text'>"I've been using WayLo for my personal travels (including my India travel) and they are at least 10% below kayak/expedia etc."</p>
+        
+        								</div>
+        							</div>
+        								<!--<div class="hr"></div>-->
+        							<hr>
+        							<p>Sahil B, Business Operations Manager, Netsil</p>
+        							<br/>
+    							</div>
+    						</li>
+    						<li>
+    						    <div>
+        							<img src="https://media.licdn.com/media/AAEAAQAAAAAAAAQsAAAAJDM4NTQ1NzQ2LTllZTItNDk4ZS04Nzg3LTkyNDBkOGE2Y2U5MQ.jpg" alt="Justin C">
+        							<div class="row">
+        								<div class="col-md-10 col-md-offset-1">
+        
+        								    <p class = 's_text'>"Love how Waylo saved me >10% on my hotel booking"</p>
+        
+        								</div>
+        							</div>
+        							<!--<div class="hr"></div>-->
+        							<hr>
+        							<p>Justin C, Founder, Rescue</p>
+        							<br />
+    							</div>
+    						</li>
+    						<!--<li>-->
+    						<!--	<img src="img/RA_logo.jpg" alt="magician">-->
+    						<!--	<div class="row">-->
+    						<!--    	<div class="col-md-10 col-md-offset-1">-->
+    
+    						<!--			<p class = 's_text'> "One of the most interesting travel chat bots I have seen" </p>-->
+    
+    						<!--		</div>-->
+    						<!--	</div>-->
+    										<!--<div class="line"></div>-->
+    						<!--	<hr>-->
+    						<!--	<p>Ian C, Entrepreneur  </p>-->
+    						<!--	<br />-->
+    						<!--</li>-->
+    						<li>
+    						    <div>
+        							<img src="img/White-7.jpg" alt="An D">
+        							<div class="row">
+        						    	<div class="col-md-10 col-md-offset-1">
+        
+        									<p class = 's_text'> Recommended. I’ll be using Waylo again in the future!" </p>
+        
+        								</div>
+        							</div>
+        										<!--<div class="line"></div>-->
+        							<hr>
+        							<p>An D, San Francisco  </p>
+        							<br />
+    							</div>
+    						</li>
+    									
+    					</ul>
+    				</div>
+    			</div>
+    
+    
+    		</div>
+    	</div>
+
+	</section>
+
+    <aside class="bg-dark" id="signup">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Launching on Nov 10, 2016</h2>
+                    <div class="col-xs-12 col-md-6 col-xs-offset-0 col-md-offset-3 floaty-horizontal--center floaty-unfloat-at--xs">
+                    <form class="form form-horizontal user-signup__form validate" name="form" novalidate="" action="//roamamore.us12.list-manage.com/subscribe/post?u=02c2b1531854969e7643c4c43&amp;id=0142b43961" method="POST">
+                        <div class="mt-table--full">
+                          <div class="mt-td--centered-vertical user-signup__col-1">
+                            <div class="user-signup__form-group m-lg-v form-group col-sm-12">
+                              <input id="EMAIL" type="email" name="EMAIL" class="form-control form-control__input user-signup__email" pattern="/^[a-zA-Z0-9+-_]+(\.[_a-zA-Z0-9+]+)*@[a-zA-Z0-9+-_]+(\.[a-zA-Z0-9+-_]+)*(\.[a-zA-Z]+)$/" placeholder="Enter Email " aria-required="true" required="required">
+                            </div>        
+                          </div>
+                          <div class="mt-td--centered-vertical user-signup__col-2">
+                            <div class="user-signup__form-group m-lg-v form-group text-center">
+                              <button id="submit" type="submit" class="btn btn-primary submit user-signup__submit btn-xl wow tada"><span>GET ACCESS</span></button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                <!-- <h2>Thank you for signing up. </h2>-->
+
+                <!--<h4>Waylo would love to know your awesome friends</h4>-->
+
+            </div>
+        </div>
+    </aside>
+    
+    <section id="contact" class="contact bg-primary" >
+        <div class="container text-center">
+            <h1>WayLo <i class="fa fa-heart"></i> new friends!</h1>
+            <ul class="list-inline list-social">
+                <li class="social-twitter">
+                    <a href="http://www.twitter.com/thewaylo"><i class="fa fa fa-twitter"></i></a>
+                </li>
+                <li class="social-facebook">
+                    <a href="http://www.facebook.com/thewaylo"><i class="fa fa-facebook"></i></a>
+                </li>
+                <!--<li class="social-google-plus">-->
+                <!--    <a href="#"><i class="fa fa-google-plus"></i></a>-->
+                <!--</li>-->
+                <li class="social-instagram">
+                    <a href="http://www.instagram.com/thewaylo"><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2016 RoamAmore Inc. All Rights Reserved.</p>
+            <p>Made with love in Berkeley, CA</p>
+            <ul class="list-inline" style="margin-top:5px;">
+                <li>
+                    <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> +1 (801) 747-9713</a>
+                </li>
+                <li>
+                    <a href="mailto:info@thewaylo.com"><i class="fa fa-envelope" aria-hidden="true"></i> info [at] thewaylo.com</a>
+                </li>
+            </ul>
+            <ul class="list-inline" style="margin-top:10px;">
+                <li>
+                    <a class="portfolio-link" data-toggle="modal" data-target="#privacymodal">Privacy</a>
+                	<!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#privacymodal">Open Modal</button>-->
+
+                </li>
+                <!--<li>-->
+                <!--    <a href="#">Terms</a>-->
+                <!--</li>-->
+                <li>
+                    <a class="portfolio-link" data-toggle="modal" data-target="#careersmodal">Careers</a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+    
+            <!-- Careers Modal -->
+    <div class="portfolio-modal modal fade" id="careersmodal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Careers</h2>
+                            <p class="item-intro text-muted"> Are you interested in revolutionizing travel booking?</p>
+
+                            <div style="text-align: left;">
+                            	     							<p>We are looking to expand our tech and marketing team. Shoot us an email at info(at)thewaylo.com if you are interested.</p>
+     							<p>At present, our tech stack is React/Redux+Firebase+Node.js</p>
+     							<p>But tech means little unless it is in the hands of millions. Yes, looking at you experienced growth hackers</p>
+     							<p>What we offer: 
+
+									<ol>
+									<li>Ability to work remotely/part-time, exploring the world with San Francisco Bay area as your home base.</li>
+									<li>Unlimited vacations as long as you meet the product deadlines.</li>
+									<li>Access to unbelievable travel deals, e.g. 2 weeks in Australia for <$500 all inclusive!</li>
+									</ol>
+								</p>
+     						</div>
+                                      <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back to WayLo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Privacy Modal -->
+    <div class="portfolio-modal modal fade" id="privacymodal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Privacy</h2>
+                            <p class="item-intro text-muted">TL;DR We respect your privacy and promise not share your personal information</p>
+                            <div style="text-align: left;">
+                            
+                          <p>Hi There!</p> <p>You must be concerned about your privacy if you are reading this message. Your time is valuable so we&rsquo;ll keep it simple.</p> <ol> <li>We collect your email address and no other information from you.</li> <li>We&rsquo;ll use this information by adding you to our list of interested customers, send you occasional newsletters that include an opt-out link, and let you know when our service is ready to use.</li> <li>We promise not to transfer your information to 3rd party services that are not directly required for us to perform business.</li> <li>Every email we send will include a link to opt out of any future communication. You can also contact info@thewaylo.com directly if you wish for your data to be 100% deleted.</li> </ol> <p>That&rsquo;s all for now! This policy may be changed in the future, but we realize that you&rsquo;re paying us with your attention and it&rsquo;s our goal to respect that transaction.</p>
+                                      <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back to WayLo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>						
+		<!-- Screenshot -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+	 new WOW().init();
+	</script>
+    <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+    <!-- Slider javascript -->
+    <script type="text/javascript" src="js/foundation.min.js"></script>
+    <script>
+      $(function () {
+        $('#calculate').foundation();
+      });
+    </script>
+    
+    <!-- Savings -->
+    <script>
+
+        function addCommas(num) {
+          num += '';
+          x = num.split('.');
+          x1 = x[0];
+          x2 = x.length > 1 ? '.' + x[1] : '';
+          var rgx = /(\d+)(\d{3})/;
+          while (rgx.test(x1)) {
+            x1 = x1.replace(rgx, '$1' + ',' + '$2');
+          }
+          return x1 + x2;
+        }
+    
+        $('#moneySlider').on('moved.zf.slider', function () {
+          var dollarAmount = Math.round($('#moneySliderHandle').attr('aria-valuenow'));
+          var savingsAmount = Math.round(dollarAmount*0.13*3);
+          $('#sliderValue').text(dollarAmount+'/night');
+          $('#savingsAmount').text(addCommas(savingsAmount));
+        });
+
+    
+    </script>
+
+
+    <!-- bxSlider Javascript file -->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+              $('.bxslider').bxSlider({
+                slideWidth: 370,
+                minSlides: 1,
+                maxSlides: 1,
+                slideMargin: 10,
+                auto: true
+                // autoControls: true
+              });
+            $('.bxslider1').bxSlider({
+                slideWidth: 800,
+                minSlides: 1,
+                maxSlides: 1,
+                slideMargin: 10,
+                auto: true,
+                pager:false
+            // autoControls: true
+            });
+        });
+    </script>
+
+    <!-- Lightbox JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.js"></script>
+	<script type="text/javascript" >
+    	jQuery(function($) {
+    		$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        		}); 
+    		
+    	});
+	</script>
+	<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-74353188-5', 'auto');
+      ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
+
+

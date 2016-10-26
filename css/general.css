@@ -1,0 +1,298 @@
+.intro-header {
+	height: 100%; /* Full PAge */
+	/*padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! 
+	padding-bottom: 50px;
+	/*color: #f8f8f8;*/
+	color: #000000;
+	/*color:#1EAFAD;*/
+	/*color:#EE486D;*/
+	/*background: url(../img/intro/intro5.jpg) no-repeat center center;*/
+	/*background: url(../img/intro/earth-518365_19201.jpg) no-repeat center center;*/
+	background: url(../img/background_waylo.jpg) no-repeat center center;
+
+	background-size: cover;
+	text-align: center;
+}
+
+.abcen{position: absolute;bottom: 8%;}
+
+.abcen1{position: absolute;top: 15%;}
+
+.h1_home{
+	font-size: 80px;
+	/*font-family: arvo;*/
+	font-weight: 300;
+	letter-spacing: 6px;
+	color:#000;
+}
+
+.h3_home{font-weight: 500;font-size: 24px}
+
+.mybutton_demo{
+	border: 4px solid #000;
+	/*color: #fff;*/
+	color: black;
+	/*background-color:#C0C0C0;*/
+	background-color: #E8E8E8;
+}
+
+.mybutton_demo:hover{
+	border: 2px solid #000;
+	/*color: #4A90BE !important;*/
+	color: #000 !important;
+	/*color: #fff !important;*/
+	background: rgba(204, 204, 204, 0);
+}
+
+.mybutton_sign{
+	/*border: 4px solid #FF7300;*/
+	border: 1px solid #000;
+	color: #fff;
+	/*color: black;*/
+	/*background-color:#C0C0C0;*/
+	/*background-color: #E8E8E8;*/
+	/*background-color: #FF7300;*/
+	background-color: #f05f40;
+}
+
+.mybutton_sign:hover{
+	/*border: 1px solid #4A90BE;*/
+	border: 2px solid #FF7300;
+	/*color: #4A90BE !important;*/
+	color: #000 !important;
+	/*color: #fff !important;*/
+	background: rgba(204, 204, 204, 0);
+}
+.button_down img {
+width: 50px;
+	
+}
+
+.network-name {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+}
+
+
+/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		.intro-header {
+			height: 560px;
+			padding-top: 50px;
+			padding-bottom: 50px;
+			/*color: #f8f8f8;*/
+			/*color: #000000;*/
+		    /*color:#8A6108;*/
+		    color: #000000;
+		    /*background-image: none; */
+		   	/*background: url(../img/intro/earth-518365_19201.jpg) no-repeat center center;*/
+			background: url(../img/background_waylo.jpg) no-repeat center center;
+			/*text-shadow: -1px 0 #F0A80C, 0 1px #F0A80C, 1px 0 #F0A80C, 0 -1px #F0A80C;*/
+			/*background-size: cover;*/
+			text-align: center;
+			/*background-color: #34495e;*/
+			
+		}
+		
+		.button_down {display:none}
+		
+		.abcen{position: absolute;bottom: 10%;}
+		
+		.abcen1{position: absolute;top: 25%;}
+		
+		.h1_home{
+	font-size: 80px;
+	/*font-family: arvo;*/
+	font-weight: 300;
+	letter-spacing: 6px;
+	color:#000;
+		}
+		
+	}
+	
+/*-- Owl */
+
+.owl-theme .owl-controls .owl-page span {
+/*background: #1abc9c !important;*/
+background: #FF7300 !important;
+}
+
+
+/*own carousel */
+
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#owl-demo-1 .item{
+  margin: 3px;
+}
+#owl-demo-1 .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.content-section-b {
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+	padding: 90px 0; 
+}
+
+.item .img-responsive {cursor:url(../img/cross.png),auto;}
+
+.reccal-slider,
+.s_changer h3,
+.soc {
+    text-align: center
+}
+
+.reccal-slider p {
+    /*font-family: DINAlternateBold, serif;*/
+    font-weight: bold;
+    color: #555;
+    line-height: 1.2
+}
+
+
+/*.s_reccal {*/
+/*    padding: 200px 0;*/
+    /*background-color: #fff*/
+/*}*/
+
+.reccal-slider {
+    margin-top: 90px
+}
+
+.reccal-slider img {
+    margin: auto auto 80px;
+    height: 90px;
+    width: 90px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px
+}
+
+.reccal-slider p {
+    margin: 0;
+    padding: 0 60px;
+    font-size: 1.25em
+}
+
+.reccal-slider {
+    height: auto!important;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.reccal-slider .line {
+    height: 1px;
+    margin-bottom: 40px;
+    margin-top: 40px
+}
+
+
+
+@media only screen and (max-width:480px) {
+    .reccal-slider p {
+        padding: 0
+    }
+}
+
+.s_text {
+	font-style: italic;
+}
+
+
+section.contact {
+  text-align: center;
+}
+section.contact h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+section.contact h2 i {
+  color: #dd4b39;
+}
+section.contact ul.list-social {
+  margin-bottom: 0;
+}
+section.contact ul.list-social li a {
+  display: block;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  font-size: 40px;
+  border-radius: 100%;
+  color: white;
+}
+section.contact ul.list-social li.social-twitter a {
+  background-color: #1da1f2;
+}
+section.contact ul.list-social li.social-twitter a:hover {
+  background-color: #0d95e8;
+}
+section.contact ul.list-social li.social-facebook a {
+  background-color: #3b5998;
+}
+section.contact ul.list-social li.social-facebook a:hover {
+  background-color: #344e86;
+}
+section.contact ul.list-social li.social-google-plus a {
+  background-color: #dd4b39;
+}
+section.contact ul.list-social li.social-google-plus a:hover {
+  background-color: #d73925;
+}
+
+section.contact ul.list-social li.social-instagram a {
+  background-color: #125688;
+}
+section.contact ul.list-social li.social-instagram a:hover {
+  background-color: #458eff;
+}
+footer {
+  background-color: #222222;
+  padding: 25px 0;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+footer p {
+  font-size: 18px;
+  margin: 0;
+}
+footer ul {
+  margin-bottom: 0;
+}
+footer ul li a {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.3);
+}
+footer ul li a:hover,
+footer ul li a:focus,
+footer ul li a:active,
+footer ul li a.active {
+  text-decoration: none;
+}
+
+/*.bx-wrapper .bx-viewport {*/
+	/*-moz-box-shadow: 0 0 5px #ccc;*/
+	/*-webkit-box-shadow: 0 0 5px #ccc;*/
+	/*box-shadow: 0 0 5px #ccc;*/
+	/*border:  5px solid #fff;*/
+	/*left: -5px;*/
+	/*background: #fff;*/
+	
+	/*fix other elements on the page moving (on Chrome)*/
+/*	-webkit-transform: translatez(0);*/
+/*	-moz-transform: translatez(0);*/
+/*    	-ms-transform: translatez(0);*/
+/*    	-o-transform: translatez(0);*/
+/*    	transform: translatez(0);*/
+/*}*/
