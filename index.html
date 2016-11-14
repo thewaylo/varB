@@ -857,7 +857,15 @@
         $.ajax({
             type: 'POST',
             url: 'https://waylothanksyou.herokuapp.com/index1.php',
-            data: {'EMAIL': $('input[name=EMAIL]').val()}
+            data: {'EMAIL': $('input[name=EMAIL]').val()},
+	    success: function() {
+            // Some success message to user.
+            // Create a virtual page view that you can track in GA.
+            ga('send', {
+                'hitType' : 'pageview',
+                'page' : '/contact-us-success' // Virtual page (aka, does not actually exist) that you can now track in GA Goals as a destination page.
+            });
+        	}
         })
         
         //   .done(function(data) {
