@@ -835,93 +835,6 @@
     	});
 	</script>
 	
-		<script>
-	   $(document).ready(function() {
-	           function ValidateEmail(mail)   
-{  
-// 	window.alert(mail);
- if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))  
-  {  
-    return (true)  
-  }  
-    // alert("You have entered an invalid email address!")  
-    return (false)  
- 
-}
-    $('form').submit(function(event) {
-    
-       // window.alert(ValidateEmail($('input[name=EMAIL]').val()));
-
-    if (ValidateEmail($('input[name=EMAIL]').val())) {
-
-   
-    
-        $.ajax({
-            type: 'POST',
-            url: 'https://waylothanksyou.herokuapp.com/index1.php',
-            data: {'EMAIL': $('input[name=EMAIL]').val()},
-	    success: function() {
-            // Some success message to user.
-            // Create a virtual page view that you can track in GA.
-            ga('send', {
-                'hitType' : 'pageview',
-                'page' : '/contact-us-success' // Virtual page (aka, does not actually exist) that you can now track in GA Goals as a destination page.
-            });
-        	}
-        })
-        
-        //   .done(function(data) {
-
-        //         // log data to the console so we can see
-        //         console.log(data); 
-
-        //         // here we will handle errors and validation messages
-        //     if ( ! data.success) {
-            
-        //     // handle errors for name ---------------
-        //     if (data.errors.EMAIL) {
-        //         $('#email-group').addClass('has-error'); // add the error class to show red input
-        //         $('#email-group').append('<div class="help-block">' + data.errors.EMAIL + '</div>'); // add the actual error message under our input
-        //     }
-
-
-
-        // } else {
-
-        //     // ALL GOOD! just show the success message!
-        //     $('form').append('<div class="alert alert-success">' + data.message + '</div>');
-        //     $('#messageSent').removeClass('invisible');
-        //     $('#messageSent').addClass('visible');
-        //     $('#name-group').addClass('invisible');
-            
-
-        //     // usually after form submission, you'll want to redirect
-        //     // window.location = '/thank-you'; // redirect a user to another page
-        //     alert('success'); // for now we'll just alert the user
-
-        // }
-                
-                
-        //     });
-
-        // stop the form from submitting the normal way and refreshing the page
-        event.preventDefault();
-        
-        
-        $('#thankyoumodal').modal('show'); 
-            // event.preventDefault();
-        } else {
-                event.preventDefault();
-                $('#invalidEmailModal').modal('show');
-                //  $('#thankyoumodal').modal('show');
-            }
-            
-    }); 
-
-})
-	</script>
-	<script type="text/javascript">CRISP_WEBSITE_ID = "68da80ec-2a2f-47f0-b380-defb89b0ab03";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-
 	<script>
 	      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -929,7 +842,67 @@
 	      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 	      ga('create', 'UA-74353188-5', 'auto');
 	      ga('send', 'pageview');
-      </script>
+	   $(document).ready(function() {
+	        function ValidateEmail(mail)   
+			{  
+			// 	window.alert(mail);
+			 if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))  
+			  {  
+			    return (true)  
+			  }  
+			    // alert("You have entered an invalid email address!")  
+			    return (false)  
+
+			}
+		    $('form').submit(function(event) {
+
+		       // window.alert(ValidateEmail($('input[name=EMAIL]').val()));
+
+		    if (ValidateEmail($('input[name=EMAIL]').val())) {
+
+
+
+			$.ajax({
+			    type: 'POST',
+			    url: 'https://waylothanksyou.herokuapp.com/index1.php',
+			    data: {'EMAIL': $('input[name=EMAIL]').val()},
+			    success: function() {
+			    // Some success message to user.
+			    // Create a virtual page view that you can track in GA.
+			    ga('send', {
+				'hitType' : 'pageview',
+				'page' : '/contact-us-success' // Virtual page (aka, does not actually exist) that you can now track in GA Goals as a destination page.
+			    });
+				}
+			})
+			.fail( function(xhr, textStatus, errorThrown) {
+				console.log('failed');
+				ga('send', {
+				'hitType' : 'pageview',
+				'page' : '/contact-us-success' // Virtual page (aka, does not actually exist) that you can now track in GA Goals as a destination page.
+				});
+			    })
+
+
+			// stop the form from submitting the normal way and refreshing the page
+			event.preventDefault();
+
+
+			$('#thankyoumodal').modal('show'); 
+			    // event.preventDefault();
+			} else {
+				event.preventDefault();
+				$('#invalidEmailModal').modal('show');
+				//  $('#thankyoumodal').modal('show');
+			    }
+
+		    }); 
+
+		})
+	</script>
+	<script type="text/javascript">CRISP_WEBSITE_ID = "68da80ec-2a2f-47f0-b380-defb89b0ab03";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+
 
 </body>
 
